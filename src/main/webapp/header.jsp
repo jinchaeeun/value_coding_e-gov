@@ -59,9 +59,10 @@
 			<ul>
 				<li><a href="./member/login.jsp">로그인</a></li>
 				<li><a href="./member/join.jsp">회원가입</a></li>
+				<li><a href="./member/mypage.jsp">마이페이지</a></li>
 				<!--
 				<li><a href="#none">로그아웃</a></li>
-				<li><a href="#none">정보수정</a></li>
+				<li><a href="#none">마이페이지</a></li>
 				-->
 			</ul>
 		</div>

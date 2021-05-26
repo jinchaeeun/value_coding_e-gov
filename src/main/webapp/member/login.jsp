@@ -1,3 +1,7 @@
+<%@page import="java.math.BigInteger"%>
+<%@page import="java.security.SecureRandom"%>
+<%@page import="java.net.URLEncoder"%>
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
  <!-- 상단 헤더 불러오기 -->
@@ -21,8 +25,8 @@
 		<a href="../member/join.jsp">회원가입</a>		
 	</div>
 <a id="kakao-login-btn"></a>
-
-	<div class="sns-login">
+<!-- 카카오 로그인 -->
+	<div class="kakao-login">
 		<ul>
 			<li onclick="kakaoLogin();">
 			  <a href="javascript:void(0)">
@@ -61,20 +65,31 @@
 		  }
 		</script>
 	</div>
-</div>
+	</div>
+<!-- 네이버 로그인 -->
 
-
+<%
+    String clientId = "WXFwIJiy9CY4hlkkNLJP";//애플리케이션 클라이언트 아이디값";
+    String redirectURI = URLEncoder.encode("http://127.0.0.1:8080/value_coding/member/nCallback.jsp", "UTF-8");
+    SecureRandom random = new SecureRandom();
+    String state = new BigInteger(130, random).toString();
+    String apiURL = "https://nid.naver.com/oauth2.0/authorize?response_type=code";
+    apiURL += "&client_id=" + clientId;
+    apiURL += "&redirect_uri=" + redirectURI;
+    apiURL += "&state=" + state;
+    session.setAttribute("state", state);
+ %>
+  <a href="<%=apiURL%>"><img height="50" src="http://static.nid.naver.com/oauth/small_g_in.PNG"/></a>
+  
+  
 <style>
-
-
-
 .login-box .findIdPw a{
 padding: 5px 10px 5px 10px;
 border-right: 1px solid #ccc;
 }
 .login-box .findIdPw a:last-child{border: 0;}
 
-.sns-login{
+.kakao-login{
 margin-top:20px;
 }
 </style>

@@ -9,6 +9,8 @@
 
 <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 <script type="text/javascript" src="https://static.nid.naver.com/js/naveridlogin_js_sdk_2.0.2.js" charset="utf-8"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<meta name="google-signin-client_id" content="313884237013-nbebjejv6nsohf9hk0cpump6kr5lvaa8.apps.googleusercontent.com">
 
 <div class="login-box">
 	<h1>로그인</h1>
@@ -97,6 +99,34 @@
 	</script>
 	</div>
 
+	<!-- 구글 로그인 (127.0.0.1 테스트 불가, LOCALHOST사용)-->
+	<!-- 구글 로그인 버튼-->
+	<div class="g-signin2" data-onsuccess="onSignIn">
+	<!-- 스타일 지정하기 -->
+	</div>
+	<!-- 프로필 정보 얻기 -->
+	<script>
+	function onSignIn(googleUser) {
+	  var profile = googleUser.getBasicProfile();
+	  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+	  console.log('Name: ' + profile.getName());
+	  console.log('Image URL: ' + profile.getImageUrl());
+	  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+	}
+	</script>
+	<!--
+	로그아웃
+		<a href="#" onclick="signOut();">Sign out</a>
+	<script>
+	  function signOut() {
+	    var auth2 = gapi.auth2.getAuthInstance();
+	    auth2.signOut().then(function () {
+	      console.log('User signed out.');
+	    });
+	  }
+	</script> 
+	
+	 -->
 </div>
 <style>
 
@@ -116,6 +146,10 @@ border-right: 1px solid #ccc;
 	display: inline-block;
 }
 
+.g-signin2 > div {
+display: inline-block;
+    width: 220px;
+}
 </style>
 
 <!-- 하단 헤더 불러오기 -->

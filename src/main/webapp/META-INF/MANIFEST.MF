@@ -1,5 +1,9 @@
 Manifest-Version: 1.0
+<<<<<<< HEAD
 Built-By: HUSTAR02
+=======
+Built-By: HUSTAR08
+>>>>>>> 419f1a81e5c460b063cb5c1387898fcce8fe44d0
 Build-Jdk: 15.0.2
 Created-By: Maven Integration for Eclipse
 

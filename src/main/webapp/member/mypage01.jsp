@@ -2,7 +2,8 @@
     pageEncoding="UTF-8"%>
     
 			<span>닉네임</span>
-			<input type="text" placeholder="닉네임" />
+			<input type="text" placeholder="닉네임" /> 
+			
 			<span>아이디(이메일)</span>
 			<input type="text" id="mypage_Email" placeholder="value_coding@naver.com" readonly onfocus="this.blur()" />
 			

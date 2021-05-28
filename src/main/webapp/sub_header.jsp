@@ -124,7 +124,7 @@
 				<li><a href="none">데이터 과학</a></li>
 				<li><a href="none">개발도구</a></li>
 				<li><a href="none">프로젝트 관리</a></li>
-				<li><a href="none">기타</a></li>
+				<li><a href="../board/notice_list.jsp">기타</a></li>
 			</ul>
 		</div>
 	</div>

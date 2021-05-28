@@ -259,9 +259,12 @@ position:absolute; left:50%; transform:translateX(-50%); bottom:-7px; }
 #ajax_div > ul > li:not(:last-child){border-bottom:1px solid #e1e1e1;}
 .myquestion-tittle a:hover{text-decoration:underline;}
 
+.nick_check {color:#c3323a;}
 .myquestion-content {margin-top:1rem;}
 .myquestion-manage{display:flex; justify-content: flex-end;}
 .myquestion-manage > li{padding-left: 10px;}
+
+
 .myquestion-manage .myquestion-remove a{color: #c3323a;}
 
 /*페이징 */

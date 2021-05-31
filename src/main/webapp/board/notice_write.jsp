@@ -6,69 +6,6 @@
 <link rel="stylesheet" type="text/css" href="../js/ckeditor5/sample/styles.css">
 <script type="text/javascript" src="../js/ckeditor5/build/ckeditor.js"></script>
 
-<style>
-/* 공지사항 글쓰기 스타일 */
-.notice-write-wrap {max-width: 1200px; margin: 0 auto; margin-top: 60px;}
-.notice-write-wrap .notice-write-box {padding: 20px;}
-.notice-write-wrap .notice-write-box h1 {text-align: center; font-size: 32px; margin-bottom: 30px;}
-
-.notice-write-wrap .notice-write-box .write-form {border: 1px solid #ccc; background: #fff;}
-.notice-write-wrap .notice-write-box .write-form ul {padding: 10px;}
-.notice-write-wrap .notice-write-box .write-form ul li {padding: 10px;}
-.notice-write-wrap .notice-write-box .write-form ul li > label {display: block; font-size: 15px; margin-bottom: 10px;}
-.notice-write-wrap .notice-write-box .write-form ul li > .title {width: 80%;}
-.notice-write-wrap .notice-write-box .write-form ul li > select {width: 18%; font-size: 15px; padding: 5px;}
-.notice-write-wrap .notice-write-box .write-form ul li > div > label {font-size: 15px;}
-.notice-write-wrap .notice-write-box .write-form ul li > div > input {padding: 5px;}
-.notice-write-wrap .notice-write-box .write-form ul li > input {font-size: 15px; padding: 5px; width: 100%;}
-.notice-write-wrap .notice-write-box .write-form ul li textarea {font-size: 12px; width: 100%; height: 400px; padding: 5px;}
-
-.write-btn-box {padding: 10px; overflow: hidden;}
-.write-btn-box a {float: right; padding: 10px; background: #8bcaff; color: #fff; border-radius: 5px; font-weight: bold; margin: 5px;}
-.write-btn-box a:hover {background: #3078b5;}
-
-/* 체크박스 모양을 조절하는 스타일 */
-.checkbox input[type=checkbox] {  
-    display: none;  
-}
-
-.checkbox input[type=checkbox] + label{
-    display: inline-block;  
-    cursor: pointer;  
-    position: relative;  
-    padding-left:20px;  
-    font-size: 12px;
-	color:#444;
-}
-.checkbox input[type=checkbox]+ label:before {
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    content: "";  
-    display: inline-block;  
-    width: 16px;  
-    height: 16px;
-	padding:1px;
-    position: absolute;  
-    left: 0;  
-    top:0px;
-    background-color: #fff;  
-	border:1px solid #000;
-    border-radius: 2px; 
-}
-
-.checkbox input[type=checkbox]:checked + label:before { 
-    content:"\f00c";  /* 체크모양 */
-    font-size: 13px; 
-    font-weight:600; 
-    color: #222;  
-    background:#fff;
-	border:1px solid #000;
-    text-align: center;  
-}
-</style>
 <div class="notice-write-wrap">
 	<div class="notice-write-box">
 		<h1>글쓰기</h1>

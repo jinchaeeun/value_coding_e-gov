@@ -2,28 +2,6 @@
     pageEncoding="UTF-8"%>
 <!-- 상단 헤더 불러오기 -->
 <jsp:include page="../sub_header.jsp"></jsp:include>
-<style>
-/* 공지사항 뷰 스타일 */
-.notice-view-wrap {max-width: 1200px; margin: 0 auto; margin-top: 60px;}
-
-.view h2 {text-align: center; font-size: 32px; padding: 20px;}
-
-.view .view-hd {text-align: center; overflow: hidden; padding-bottom: 10px;}
-.view .view-hd span {float: right; margin: 0 5px;}
-.view .view-hd p {float: right; margin-right: 20px;}
-.view .view-hd p.title {float: left; font-size: 20px; margin-left: 10px;}
-
-.view .view-content {background: #fff; padding: 20px; border: 1px solid #ccc; min-height: 500px;}
-
-.view .view-file {background: #fff; margin: 10px 0;}
-.view .view-file a {display: block; padding: 5px; border-bottom: 1px dashed #ccc;}
-.view .view-file a:last-child {border-bottom: 0;}
-
-.write-btn-box {padding: 10px; overflow: hidden;}
-.write-btn-box a {float: right; padding: 10px; background: #8bcaff; color: #fff; border-radius: 5px; font-weight: bold; margin: 5px;}
-.write-btn-box a:hover {background: #3078b5;}
-
-</style>
 
 <div class="notice-view-wrap">
 	<div class="notice-box">
@@ -49,21 +27,7 @@
 			</div>
 		</div> <!-- view -->
 	</div> <!-- notice-box -->
-	
-	<style>
-		.answer-wrap {border: 1px solid #ccc; padding: 10px;}
-		.answer-wrap .answer-box {}
-		.answer-wrap .answer-box h3 {padding: 5px; border-bottom: 1px solid #000; margin-bottom: 10px;}
-		.answer-wrap .answer-box .answer {margin-bottom: 10px; border-bottom: 1px solid #ddd;}
-		
-		.answer-wrap .answer-box .answer .answer-writer {display: inline-block; width: 15%; vertical-align: top;}
-		.answer-wrap .answer-box .answer .answer-writer span {font-size: 14px;}
-		
-		.answer-wrap .answer-box .answer .answer-content-box {display: inline-block; width: 80%; vertical-align: middle;}
-		.answer-wrap .answer-box .answer .answer-content-box .answer-content {font-size: 13px; margin-bottom: 10px;}
-		.answer-wrap .answer-box .answer .answer-content-box .answer-info {color: #ccc; font-size: 11px; margin-bottom: 10px;}
-		.answer-wrap .answer-box .answer .answer-content-box .answer-info a {color: #ccc;}
-	</style>
+
 	<div class="answer-wrap">
 		<div class="answer-box">
 			<h3>댓글</h3>
@@ -118,15 +82,7 @@
 					</div> <!-- answer-info -->
 				</div> <!-- answer-content-box -->
 			</div> <!-- answer -->
-			
-			<style>
-				.answer-write-wrap {padding: 10px;}
-				.answer-write-wrap .answer-write-box {overflow: hidden;}
-				.answer-write-wrap .answer-write-box p {font-size: 13px; font-weight: bold; margin-bottom: 10px;}
-				.answer-write-wrap .answer-write-box textarea {border: 1.5px solid #000; border-radius: 2px; width: 100%; height: 100px; padding: 5px;}
-				.answer-write-wrap .answer-write-box input {float: right; padding: 5px 10px; border: 0; background-color: #fff; color: #888;}
-				
-			</style>
+
 			<div class="answer-write-wrap">
 				<div class="answer-write-box">
 					<p>로그인한 사람의 닉네임</p>
